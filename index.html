@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./fonts/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>Pet shop</title>
 </head>
 
@@ -44,29 +45,29 @@
                           </div>
                     </div>
 
-                    <div class="nav__basket">
-                        <div class="nav__basket-icon"><i class="fal fa-shopping-cart"></i></div>
-                        <div class="nav__basket-number">0 р.</div>
-                        <div class="nav__basket-arrow"><i class="fas fa-sort-down"></i></div>
-                    </div>
-                </div>
-                 <div class="burger__menu">
-                    <span></span>
-                </div>
-                <ul class="bur__list">
-                    <li>
-                        <a href="#!" class="bur__link">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="bur__link">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="bur__link">О сервисе</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="bur__link">Контакты</a>
-                    </li>
-                </ul> 
+           <div class="nav__block">
+            <div class="nav__basket">
+
+            </div>
+        </div>
+         <div class="burger__menu">
+            <span></span>
+        </div>
+        <ul class="bur__list">
+            <li>
+                <a href="#!" class="bur__link">Главная</a>
+            </li>
+            <li>
+                <a href="#!" class="bur__link">Каталог</a>
+            </li>
+            <li>
+                <a href="#!" class="bur__link">О сервисе</a>
+            </li>
+            <li>
+                <a href="#!" class="bur__link">Контакты</a>
+            </li>
+        </ul> 
+           </div>
             </nav>
             <div class="intro__inner">
                 <div class="intro__item">
@@ -76,15 +77,18 @@
                         Действуй!</div>
                     <a href="#!" class="header__button">Купить сейчас</a>
                 </div>
-                <img class="intro__img" src="./image/header-back.png" alt="">
+                <div class="header__background">
+                    <img class="intro__img" src="./image/header-back.png" alt="">
                 <div class="animate__img">
-                    <img  src="./image/Животные.png" alt="">
+                    <img src="./image/Животные.png" alt="">
                 </div>
+                </div>
+                
             </div>
         </div>
     </header>
 
-    <main>
+     <main>
         <section class="category">
             <h2 class="category__title">Популярные категории</h2>
             <div class="container">
@@ -100,7 +104,6 @@
                         <div class="category__text">Кошки</div>
                         <div class="category__line"></div>
                     </div>
-
                     <div class="category__item category__animate_3">
                         <div class="category__img"><img src="./image/parrot.png" alt=""></div>
                         <div class="category__text">Птицы</div>
@@ -115,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section class="product">
+         <section class="product">
             <div class="product__title">Наши продукты</div>
             <div class="product__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis quam nisi
                 adipiscing nunc. Sagittis arcu cursus lorem ultricies </div>
@@ -296,7 +299,7 @@
                 </div>
             </div>
         </section>
-        <section class="news">
+       <section class="news">
             <div class="container">
                 <div class="news__title">Новости животных сегодня</div>
                 <div class="news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis quam nisi
@@ -327,7 +330,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+     <!--<footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__contact">
@@ -372,7 +375,7 @@
                 </div>
             </div>
         </div> 
-</footer>
+</footer> -->
 
     <script src="./js/script.js"></script>
 </body>

@@ -71,17 +71,17 @@ window.addEventListener("scroll", function () {
     }
 });
 
-const modal = document.querySelector(".modal"),
-    headerButton = document.querySelector(".header__button"),
-    modalClose = document.querySelector(".modal__close");
+// const modal = document.querySelector(".modal"),
+//     headerButton = document.querySelector(".header__button"),
+//     modalClose = document.querySelector(".modal__close");
 
-headerButton.addEventListener("click", function () {
-    modal.classList.add("active");
-})
+// headerButton.addEventListener("click", function () {
+//     modal.classList.add("active");
+// })
 
-modalClose.addEventListener("click", function () {
-    modal.classList.remove("active");
-})
+// modalClose.addEventListener("click", function () {
+//     modal.classList.remove("active");
+// })
 
 const burgerMenu = document.querySelector(".burger__menu"),
     burList = document.querySelector(".bur__list");
