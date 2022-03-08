@@ -329,6 +329,14 @@ input[type="checkbox"] {
     text-decoration: none;
 }
 
+.header__button:hover {
+    color: #fff;
+}
+
+a:hover {
+    color: #272727 ;
+}
+
 .category {
     background-image: url(../image/catalog-bg.png);
     background-position: center;
