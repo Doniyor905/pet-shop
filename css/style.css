@@ -989,7 +989,7 @@ a:hover {
 
 .modal.active {
     opacity: 1;
-    z-index: 3;
+    z-index: 4;
 }
 
 .modal__close {
@@ -1353,7 +1353,7 @@ a:hover {
     height: 20px;
     position: relative;
     display: none;
-    z-index: 18;
+    z-index: 4;
     cursor: pointer;
     margin-left: 20px;
 }
@@ -1411,7 +1411,7 @@ a:hover {
     transition: .5s;
     list-style: none;
     overflow: hidden;
-    z-index: 5;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
