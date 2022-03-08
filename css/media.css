@@ -1,3 +1,5 @@
+@media(max-width:1199px) {}
+
 @media(max-width:1148px) {
     .intro__img {
         max-width: 691px;
@@ -42,6 +44,20 @@
     .doctor__item {
         width: 576px;
     }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .footer__item {
+        gap: 30px;
+        justify-content: space-around;
+    }
+
 }
 
 @media(max-width:1032px) {
@@ -93,6 +109,10 @@
         align-items: center;
     }
 
+    .carousel-indicators {
+        right: 0px;
+    }
+
     .burger__menu {
         display: block;
     }
@@ -113,9 +133,8 @@
     .animate__img {
         max-width: 500px;
         position: absolute;
-        top: 50%;
-        left: 250px;
-        z-index: 2;
+        top: 16%;
+        left: 115px;
         animation: animateimg 9s linear infinite;
         border-radius: 50%;
         overflow: hidden;
@@ -160,6 +179,15 @@
     }
 }
 
+@media(max-width:743px) {
+    .modal__inner {
+        background: #F5B939;
+        width: 603px;
+        height: 405px;
+        position: relative;
+    }
+}
+
 @media(max-width:700px) {
     .news__item-left {
         flex-direction: column;
@@ -199,6 +227,29 @@
     .doctor__subtitle {
         width: 100%;
     }
+
+    .footer__item {
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+
+    .footer__inner {
+        align-items: center;
+    }
+
+    .form__modal {
+        width: 247px;
+    }
+
+    .modal__title {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .modal__inner {
+        width: 562px;
+    }
 }
 
 @media(max-width:592px) {
@@ -229,6 +280,38 @@
     }
 }
 
+@media(max-width:569px) {
+    .modal__content {
+        flex-direction: column;
+    }
+
+    .modal__inner {
+        height: 75%;
+    }
+
+    .modal__title {
+        text-align: center;
+    }
+
+    .modal__subtitle {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .form__modal {
+        margin: 0 auto;
+    }
+
+    .modal__button {
+        margin: 0 auto;
+    }
+
+    .modal__text {
+        text-align: center;
+    }
+}
+
 @media(max-width:518px) {
     .category__inner {
         flex-wrap: wrap;
@@ -251,6 +334,10 @@
     .doctor__subtitle {
         font-size: 13px;
         margin-top: 5px;
+    }
+
+    .arrow-up {
+        right: 12px;
     }
 }
 

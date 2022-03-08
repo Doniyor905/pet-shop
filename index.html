@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./lib/bootstrap.css">
     <link rel="stylesheet" href="./fonts/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
@@ -15,7 +16,7 @@
 <body>
     <header class="header green-color">
         <div class="container">
-     
+
             <nav class="nav">
                 <a href="#!" class="logo">
                     <img src="./image/logo.png" alt="">
@@ -42,32 +43,32 @@
                         <div class="toggle-btn btn-rejim" id="_1st-toggle-btn">
                             <input type="checkbox">
                             <span></span>
-                          </div>
+                        </div>
                     </div>
 
-           <div class="nav__block">
-            <div class="nav__basket">
+                    <div class="nav__block">
+                        <div class="nav__basket">
 
-            </div>
-        </div>
-         <div class="burger__menu">
-            <span></span>
-        </div>
-        <ul class="bur__list">
-            <li>
-                <a href="#!" class="bur__link">Главная</a>
-            </li>
-            <li>
-                <a href="#!" class="bur__link">Каталог</a>
-            </li>
-            <li>
-                <a href="#!" class="bur__link">О сервисе</a>
-            </li>
-            <li>
-                <a href="#!" class="bur__link">Контакты</a>
-            </li>
-        </ul> 
-           </div>
+                        </div>
+                    </div>
+                    <div class="burger__menu">
+                        <span></span>
+                    </div>
+                    <ul class="bur__list">
+                        <li>
+                            <a href="#!" class="bur__link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="bur__link">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="bur__link">О сервисе</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="bur__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <div class="intro__inner">
                 <div class="intro__item">
@@ -77,18 +78,57 @@
                         Действуй!</div>
                     <a href="#!" class="header__button">Купить сейчас</a>
                 </div>
-                <div class="header__background">
+                <!-- <div class="header__background">
                     <img class="intro__img" src="./image/header-back.png" alt="">
-                <div class="animate__img">
-                    <img src="./image/Животные.png" alt="">
+                    <div class="animate__img">
+                        <img src="./image/Животные.png" alt="">
+                    </div>
+                </div> -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="header__background carousel-item active">
+                            <img class="intro__img" src="./image/header-back.png" alt="">
+                            <div class="animate__img">
+                                <img src="./image/Животные.png" alt="">
+                            </div>
+                        </div>
+                        <div class="header__background carousel-item ">
+                            <img class="intro__img" src="./image/header-back.png" alt="">
+                            <div class="animate__img">
+                                <img src="./image/Животные.png" alt="">
+                            </div>
+                        </div>
+                        <div class="header__background carousel-item ">
+                            <img class="intro__img" src="./image/header-back.png" alt="">
+                            <div class="animate__img">
+                                <img src="./image/Животные.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+                <div class="carousel-indicators intro__indicator">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                
             </div>
         </div>
     </header>
 
-     <main>
+    <main>
         <section class="category">
             <h2 class="category__title">Популярные категории</h2>
             <div class="container">
@@ -118,11 +158,12 @@
                 </div>
             </div>
         </section>
-         <section class="product">
+        <section class="product">
             <div class="product__title">Наши продукты</div>
             <div class="product__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis quam nisi
                 adipiscing nunc. Sagittis arcu cursus lorem ultricies </div>
             <div class="container">
+                
                 <div class="product__inner">
                     <div class="product__item product__animate_1">
                         <div class="product__img"><img src="./image/produc_dog.png" alt=""></div>
@@ -299,7 +340,7 @@
                 </div>
             </div>
         </section>
-       <section class="news">
+        <section class="news">
             <div class="container">
                 <div class="news__title">Новости животных сегодня</div>
                 <div class="news__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis quam nisi
@@ -330,28 +371,86 @@
             </div>
         </section>
     </main>
-     <!--<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__contact">
-                    <div class="footer__logo"><img src="./image/footer__logo.png" alt=""></div>
-                    <div class="footer__contact-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis quam nisi adipiscing nunc.
-                        Sagittis arcu cursus lorem
+                <div class="footer__item">
+                    <div class="footer__contact">
+                        <div class="footer__logo"><img src="./image/footer__logo.png" alt=""></div>
+                        <div class="footer__contact-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis quam nisi adipiscing nunc.
+                            Sagittis arcu cursus lorem
+                        </div>
+                        <a href="#!" class="footer__contact-phone">
+                            <span><i class="fas fa-phone-alt"></i></span> +7 988 777-88-77
+                        </a>
+                        <div class="footer__contact-search">
+                            <input type="search">
+                            <i class="fad fa-search search__icon"></i>
+                        </div>
                     </div>
-                    <a href="#!" class="footer__contact-phone">
-                        <span><i class="fas fa-phone-alt"></i></span> +7 988 777-88-77
-                    </a>
-                    <div class="footer__contact-search">
-                        <input type="search">
+                    <div class="footer__news">
+                        <div class="footer-news__title">Новости</div>
+                        <div class="footer__news-block">
+                            <img src="./image/footer-news-img.png" />
+                            <div class="footer__news-text">
+                                <div class="footer__text-title">Вфывфывфыввыф</div>
+                                <div class="footer__text-data"><i
+                                        class="fad fa-calendar-alt footer__text-icon"></i>18.08.2020</div>
+                            </div>
+                        </div>
+                        <div class="footer__news-block">
+                            <img src="./image/footer-news-img-2.png" />
+                            <div class="footer__news-text">
+                                <div class="footer__text-title">Вфывфывфыввыф</div>
+                                <div class="footer__text-data"><i
+                                        class="fad fa-calendar-alt footer__text-icon"></i>18.08.2020</div>
+                            </div>
+                        </div>
+                        <div class="footer__news-block">
+                            <img src="./image/footer-news-img-3.png" />
+                            <div class="footer__news-text">
+                                <div class="footer__text-title">Вфывфывфыввыф</div>
+                                <div class="footer__text-data"><i
+                                        class="fad fa-calendar-alt footer__text-icon"></i>18.08.2020</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="footer__news"></div>
-                <div class="footer__insta"></div>
-                <div class="footer__form"></div>
+                <div class="footer__item">
+                    <div class="footer__insta">
+                        <div class="footer-insta__title">Инстаграм</div>
+                        <div class="footer__insta-block">
+                            <img src="./image/footer-news-img-4.png" />
+                            <img src="./image/footer-news-img.png" />
+                        </div>
+                        <div class="footer__insta-block">
+                            <img src="./image/footer-news-img-5.png" />
+                            <img src="./image/footer-news-img-6.png" />
+                        </div>
+                        <div class="footer__insta-block">
+                            <img src="./image/footer-news-img-7.png" />
+                            <img src="./image/footer-news-img-8.png" />
+                        </div>
+                    </div>
+                    <div class="footer__form">
+
+                        <div class="footer__form-img"><img src="./image/form-dog.png" alt=""></div>
+                        <form action="#" class="footer__form-block">
+
+                            <div class="footer__form-title">ПОДПИСЫВАЙСЯ!!!</div>
+                            <div class="footer__form-subtitle">НОВИНКИ, СКИДКИ,
+                                ПРЕДЛОЖЕНИЯ!</div>
+                            <input type="text" class="footer__input" placeholder="Введите адрес электронной почты">
+                            <button class="footer__button">ПОДПИСЫВАЙСЯ</button>
+                        </form>
+                    </div>
+                    <a href="#" class="arrow-up"><i class="fas fa-long-arrow-up "></i></a>
+                </div>
             </div>
-        </div> 
-         <div class="modal">
+        </div>
+
+        <div class="modal">
             <div class="modal__inner">
                 <div class="modal__close"><span>X</span></div>
                 <div class="modal__content">
@@ -374,9 +473,9 @@
                     </div>
                 </div>
             </div>
-        </div> 
-</footer> -->
-
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
